@@ -1,6 +1,6 @@
-import LabeledInput from "../Elements/LabeledInput"
-import CheckBox from "../Elements/CheckBox"
-import Button from "../Elements/Button"
+import Button from "../Elements/Button";
+import CheckBox from "../Elements/CheckBox";
+import LabeledInput from "../Elements/LabeledInput";
 
 const FormSignIn = () => {
   return (
@@ -25,8 +25,10 @@ const FormSignIn = () => {
         <CheckBox label="Keep me signed in" name="status" />
       </div>
       <Button variant="bg-primary w-full text-white" type="submit" />
+	      Login
+      </Button>
     </form>
-  )
-}
+  );
+};
 
-export default FormSignIn
+export default FormSignIn;
