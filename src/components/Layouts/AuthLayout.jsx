@@ -1,7 +1,9 @@
 import Logo from "../Logo"
 import FormSignIn from "../Fragments/FormSignIn"
 
-const AuthLayout = () => {
+const AuthLayout = (props) => {
+  const { children } = props
+
   return (
     <div className="flex justify-center min-h-screen items-center bg-special-mainBg">
       {/* container start */}
@@ -10,9 +12,7 @@ const AuthLayout = () => {
         <Logo />
         {/* logo end */}
         {/* form start */}
-        <div className="mt-16">
-          <FormSignIn />
-        </div>
+        <div className="mt-16">{children}</div>
         {/* form end */}
         {/* teks start */}
         <div className="my-9 px-7 flex justify-center text-xs text-gray-03 items-center flex-col static">
