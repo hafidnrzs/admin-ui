@@ -1,65 +1,26 @@
-const App = () => {
+import Logo from "../Logo"
+import FormSignIn from "../Fragments/FormSignIn"
+
+const AuthLayout = () => {
   return (
     <div className="flex justify-center min-h-screen items-center bg-special-mainBg">
       {/* container start */}
       <div className="w-full max-w-sm">
         {/* logo start */}
-        <div className="flex justify-center font-poppins tracking-wide text-primary text-4xl">
-          <span className="font-bold ">FINE</span>bank
-          <span className="font-bold">.IO</span>
-        </div>
+        <Logo />
         {/* logo end */}
         {/* form start */}
         <div className="mt-16">
-          <form action="">
-            <div className="mb-6">
-              <label htmlFor="email" className="block text-sm mb-2">
-                Email Address
-              </label>
-              <input
-                type="email"
-                className="py-3 ps-4 text-sm border rounded-md w-full bg-special-mainBg border-gray-03 text-gray-01 focus:border-black focus:outline-none focus:ring-0"
-                placeholder="hello@example.com"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div className="mb-6">
-              <label htmlFor="password" className="block text-sm mb-2">
-                Password
-              </label>
-              <input
-                type="password"
-                className="py-3 ps-4 text-sm border rounded-md w-full bg-special-mainBg border-gray-03 text-gray-01 focus:border-black focus:outline-none focus:ring-0"
-                placeholder="************"
-                name="password"
-                id="password"
-              />
-            </div>
-            <div className="mb-3">
-              <input
-                type="checkbox"
-                className="text-sm accent-primary"
-                name="status"
-                id="status"
-              />
-              <label htmlFor="status" className="text-sm text-gray-01 ms-6">
-                Keep me signed in
-              </label>
-            </div>
-            <button
-              className="h-12 rounded-md text-sm bg-primary w-full text-white"
-              type="submit"
-            >
-              Login
-            </button>
-          </form>
+          <FormSignIn />
         </div>
         {/* form end */}
         {/* teks start */}
         <div className="my-9 px-7 flex justify-center text-xs text-gray-03 items-center flex-col static">
           <div className="border border-gray-05 w-full"></div>
-          <div class="px-2 bg-special-mainBg absolute"> or sign in with</div>
+          <div className="px-2 bg-special-mainBg absolute">
+            {" "}
+            or sign in with
+          </div>
         </div>
         {/* teks end */}
         {/* sign in with google start */}
@@ -139,4 +100,4 @@ const App = () => {
   )
 }
 
-export default App
+export default AuthLayout
