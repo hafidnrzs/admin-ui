@@ -5,7 +5,7 @@ const App = () => {
       <div className="w-full max-w-sm">
         {/* logo start */}
         <div className="flex justify-center font-poppins tracking-wide text-primary text-4xl">
-          <span className="font-bold">FINE</span>bank
+          <span className="font-bold ">FINE</span>bank
           <span className="font-bold">.IO</span>
         </div>
         {/* logo end */}
@@ -14,7 +14,7 @@ const App = () => {
           <form action="">
             <div className="mb-6">
               <label htmlFor="email" className="block text-sm mb-2">
-                Email address
+                Email Address
               </label>
               <input
                 type="email"
@@ -59,10 +59,7 @@ const App = () => {
         {/* teks start */}
         <div className="my-9 px-7 flex justify-center text-xs text-gray-03 items-center flex-col static">
           <div className="border border-gray-05 w-full"></div>
-          <div className="px-2 bg-special-mainBg absolute">
-            {" "}
-            or sign in with
-          </div>
+          <div class="px-2 bg-special-mainBg absolute"> or sign in with</div>
         </div>
         {/* teks end */}
         {/* sign in with google start */}
