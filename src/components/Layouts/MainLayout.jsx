@@ -2,37 +2,37 @@ const MainLayout = () => {
   return (
     <div className="flex bg-special-mainBg w-screen min-h-screen max-w-full">
       {/* navbar start */}
-      <nav className="bg-defaultBlack text-special-bg2 w-36 min-h-screen px-7 py-12 flex flex-col justify-between">
+      <nav className="bg-defaultBlack text-special-bg2 sm:w-72 w-36 min-h-screen px-7 py-12 flex flex-col justify-between">
         <div>
           <div className="flex justify-center mb-10">Logo</div>
           <div className="flex bg-primary text-white px-4 py-3 rounded-md">
-            <div className="mx-auto">A</div>
-            <div className="ms-3 hidden">MENU</div>
+            <div className="text-white mx-auto sm:mx-0">A</div>
+            <div className="ms-3 hidden sm:block">MENU</div>
           </div>
           <div className="flex hover:bg-special-bg3 px-4 py-3 rounded-md">
-            <div className="mx-auto">B</div>
-            <div className="ms-3 hidden">MENU</div>
+            <div className="mx-auto sm:mx-0">B</div>
+            <div className="ms-3 hidden sm:block">MENU</div>
           </div>
           <div className="flex hover:bg-special-bg3 px-4 py-3 rounded-md">
-            <div className="mx-auto">C</div>
-            <div className="ms-3 hidden">MENU</div>
+            <div className="mx-auto sm:mx-0">C</div>
+            <div className="ms-3 hidden sm:block">MENU</div>
           </div>
         </div>
         <div>
           <div className="flex bg-special-bg3 px-4 py-3 rounded-md">
-            <div className="mx-auto">D</div>
-            <div className="ms-3 hidden">Logout</div>
+            <div className="mx-auto sm:mx-0">D</div>
+            <div className="ms-3 hidden sm:block">Logout</div>
           </div>
           <div className="border-b my-10 border-b-special-bg"></div>
           {/* foto */}
           <div className="flex justify-between">
-            <div className="mx-auto">foto</div>
-            <div className="hidden">
+            <div className="mx-auto sm:mx-0">foto</div>
+            <div className="hidden sm:block">
               Username
               <br />
               View Profile
             </div>
-            <div className="hidden">icon</div>
+            <div className="hidden sm:block">icon</div>
           </div>
         </div>
       </nav>
@@ -46,27 +46,27 @@ const MainLayout = () => {
           </div>
           <div className="flex">
             <div>Icon</div>
-            <div className="ms-10 hidden">Search Box</div>
+            <div className="ms-10 hidden sm:block">Search Box</div>
           </div>
         </header>
         {/* header end */}
         {/* content start */}
         <main className="px-6 py-4">
           {/* top content start */}
-          <div className="mb-8">
-            <div className="">
+          <div className="mb-4 sm:flex sm:gap-6">
+            <div className="mb-4 sm:w-1/3">
               <div className="text-lg text-gray-02 mb-2">Title1</div>
               <div className="bg-white rounded-lg px-6 py-5 shadow-xl">
                 widget 1
               </div>
             </div>
-            <div className="">
+            <div className="mb-4 sm:w-1/3">
               <div className="text-lg text-gray-02 mb-2">Title2</div>
               <div className="bg-white rounded-lg px-6 py-5 shadow-xl">
                 widget 2
               </div>
             </div>
-            <div className="">
+            <div className="mb-4 sm:w-1/3">
               <div className="text-lg text-gray-02 mb-2">Title3</div>
               <div className="bg-white rounded-lg px-6 py-5 shadow-xl">
                 widget 3
@@ -75,21 +75,21 @@ const MainLayout = () => {
           </div>
           {/* top content end */}
           {/* bottom content start */}
-          <div className="">
-            <div className="">
+          <div className="sm:flex sm:gap-6">
+            <div className="mb-4 sm:w-1/3">
               <div className="text-lg text-gray-02 mb-2">Title4</div>
               <div className="bg-white rounded-lg px-6 py-5 shadow-xl">
                 widget 4
               </div>
             </div>
-            <div className="">
-              <div className="mb-8">
+            <div className="sm:w-2/3">
+              <div className="mb-4">
                 <div className="text-lg text-gray-02 mb-2">Title5</div>
                 <div className="bg-white rounded-lg px-6 py-5 shadow-xl">
                   widget 5
                 </div>
               </div>
-              <div className="">
+              <div className="mb-4">
                 <div className="text-lg text-gray-02 mb-2">Title6</div>
                 <div className="bg-white rounded-lg px-6 py-5 shadow-xl">
                   widget 6
