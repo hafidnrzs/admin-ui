@@ -1,10 +1,14 @@
+import { Icon } from "../Elements/Icon";
+
 const Navbar = () => {
   return (
     <nav className="bg-defaultBlack text-special-bg2 sm:w-72 w-36 min-h-screen px-7 py-12 flex flex-col justify-between">
       <div>
         <div className="flex justify-center mb-10">Logo</div>
         <div className="flex bg-primary text-white px-4 py-3 rounded-md">
-          <div className="text-white mx-auto sm:mx-0">A</div>
+          <div className="text-white mx-auto sm:mx-0">
+            <Icon.Overview />
+          </div>
           <div className="ms-3 hidden sm:block">Overview</div>
         </div>
         <div className="flex hover:bg-special-bg3 px-4 py-3 rounded-md">
