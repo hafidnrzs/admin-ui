@@ -13,13 +13,37 @@ const Navbar = () => {
       id: "balance",
       link: "/balance",
       icon: <Icon.Balance />,
-      label: "Balance",
+      label: "Balances",
     },
     {
       id: "transaction",
       link: "/transaction",
       icon: <Icon.Transaction />,
-      label: "Transaction",
+      label: "Transactions",
+    },
+    {
+      id: "bill",
+      link: "/bill",
+      icon: <Icon.Bill />,
+      label: "Bills",
+    },
+    {
+      id: "expenses",
+      link: "/expense",
+      icon: <Icon.Expense />,
+      label: "Expenses",
+    },
+    {
+      id: "goal",
+      link: "/goal",
+      icon: <Icon.Goal />,
+      label: "Goals",
+    },
+    {
+      id: "setting",
+      link: "/settings",
+      icon: <Icon.Setting />,
+      label: "Settings",
     },
   ];
 
@@ -37,23 +61,23 @@ const Navbar = () => {
         ))}
       </div>
       <div className="sticky bottom-12">
-        <Link to="logout">
-          <div className="flex bg-special-bg3 px-4 py-3 rounded-md">
+        <Link to="/logout">
+          <div className="flex bg-special-bg3 px-4 py-3 rounded-md hover:text-white">
             <div className="mx-auto sm:mx-0">D</div>
             <div className="ms-3 hidden sm:block">Logout</div>
           </div>
-          <div className="border-b my-10 border-b-special-bg"></div>
-          {/* foto */}
-          <div className="flex justify-between">
-            <div className="mx-auto sm:mx-0">foto</div>
-            <div className="hidden sm:block">
-              Username
-              <br />
-              View Profile
-            </div>
-            <div className="hidden sm:block">icon</div>
-          </div>
         </Link>
+        <div className="border-b my-10 border-b-special-bg"></div>
+        {/* foto */}
+        <div className="flex justify-between">
+          <div className="mx-auto sm:mx-0">foto</div>
+          <div className="hidden sm:block">
+            Username
+            <br />
+            View Profile
+          </div>
+          <div className="hidden sm:block">icon</div>
+        </div>
       </div>
     </nav>
   );
