@@ -1,4 +1,8 @@
+import Input from "../Elements/LabeledInput/Input";
+
 const Header = () => {
+  const date = new Date().toDateString().slice(4);
+
   return (
     <header className="border-b-2 p-6 flex items-center justify-between">
       <div className="flex">
@@ -7,7 +11,9 @@ const Header = () => {
       </div>
       <div className="flex">
         <div>Icon</div>
-        <div className="ms-10 hidden sm:block">Search Box</div>
+        <div className="ms-10 hidden sm:block">
+          <Input variant="bg-white w-80" />
+        </div>
       </div>
     </header>
   );
