@@ -1,4 +1,5 @@
 import MainLayout from "../components/Layouts/MainLayout";
+import Card from "../components/Elements/Card";
 
 const DashboardPage = () => {
   return (
@@ -6,45 +7,27 @@ const DashboardPage = () => {
       {/* top content start */}
       <div className="mb-4 sm:flex sm:gap-6">
         <div className="mb-4 sm:w-1/3">
-          <div className="text-lg text-gray-02 mb-2">Title1</div>
-          <div className="bg-white rounded-lg px-6 py-5 shadow-xl">
-            widget 1
-          </div>
+          <Card />
         </div>
         <div className="mb-4 sm:w-1/3">
-          <div className="text-lg text-gray-02 mb-2">Title2</div>
-          <div className="bg-white rounded-lg px-6 py-5 shadow-xl">
-            widget 2
-          </div>
+          <Card />
         </div>
         <div className="mb-4 sm:w-1/3">
-          <div className="text-lg text-gray-02 mb-2">Title3</div>
-          <div className="bg-white rounded-lg px-6 py-5 shadow-xl">
-            widget 3
-          </div>
+          <Card />
         </div>
       </div>
       {/* top content end */}
       {/* bottom content start */}
       <div className="sm:flex sm:gap-6">
         <div className="mb-4 sm:w-1/3">
-          <div className="text-lg text-gray-02 mb-2">Title4</div>
-          <div className="bg-white rounded-lg px-6 py-5 shadow-xl">
-            widget 4
-          </div>
+          <Card />
         </div>
         <div className="sm:w-2/3">
           <div className="mb-4">
-            <div className="text-lg text-gray-02 mb-2">Title5</div>
-            <div className="bg-white rounded-lg px-6 py-5 shadow-xl">
-              widget 5
-            </div>
+            <Card />
           </div>
           <div className="mb-4">
-            <div className="text-lg text-gray-02 mb-2">Title6</div>
-            <div className="bg-white rounded-lg px-6 py-5 shadow-xl">
-              widget 6
-            </div>
+            <Card />
           </div>
         </div>
       </div>
