@@ -12,11 +12,15 @@ const Navbar = () => {
           <div className="ms-3 hidden sm:block">Overview</div>
         </div>
         <div className="flex hover:bg-special-bg3 px-4 py-3 rounded-md">
-          <div className="mx-auto sm:mx-0">B</div>
+          <div className="mx-auto sm:mx-0">
+            <Icon.Balance />
+          </div>
           <div className="ms-3 hidden sm:block">Balances</div>
         </div>
         <div className="flex hover:bg-special-bg3 px-4 py-3 rounded-md">
-          <div className="mx-auto sm:mx-0">C</div>
+          <div className="mx-auto sm:mx-0">
+            <Icon.Transaction />
+          </div>
           <div className="ms-3 hidden sm:block">Transactions</div>
         </div>
       </div>
